@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            width: 80vw; 
+            height: 90vh;
+            /* padding: 6px; */
+            border: 2px solid red;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            /* flex-direction: row; */
+            /* flex-wrap: wrap-reverse; */
+            gap: 20px;
+        }
+
+        .box{
+            height: 56px;
+            /* width: 100px; */
+            /* margin: 5px; */
+            border: 2px solid green;
+            flex-shrink: 1;
+            flex-basis: 12vw;
+        }
+
+        #box1{
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+    </div>
+</body>
+</html>

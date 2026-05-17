@@ -1,0 +1,14 @@
+{
+  "name": "pdf-utils",
+  "version": "1.0.0",
+  "description": "This website will help you merge your pdfs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harry",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

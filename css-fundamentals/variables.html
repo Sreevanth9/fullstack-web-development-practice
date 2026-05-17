@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --primary-color: rgb(20, 212, 10);
+            --text-color: red;
+        }
+        .container{
+            --primary-color: rgb(99, 99, 212);
+            --size: 56px;
+            background-color: var(--primary-color);
+            color: var(--text-color, purple);
+        }
+
+        .box{
+            background-color: beige; 
+            margin: 45px;
+        }
+
+        footer{
+            border: 2px solid var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+            <div class="box">Box 4</div>
+            <div class="box">Box 5</div>
+        </div>
+
+        <footer>
+            Copyright | All rights reserved
+        </footer>
+</body>
+</html>
