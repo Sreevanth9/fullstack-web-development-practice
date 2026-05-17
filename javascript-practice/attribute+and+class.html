@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML and Value</title>
+    <style>
+        .harry{
+            background-color: red;
+            color: blue;
+            width: 233px;
+            border: 2px solid blue;
+            padding: 34px;
+        }
+
+        .blue{
+            padding: 34px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="welcome">Welcome to my form</div>
+        <form action="">
+            <input type="text" id="username" value="Harry">
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="container">
+        <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s" alt="this">
+
+        <button id="btn" onclick="func1()">Add Blue</button>
+    </div>
+    <script>
+      const img = document.getElementById("image")
+      img.setAttribute("alt", "an image of a person holding a phone")
+    //   img.removeAttribute("alt")
+      console.log(img.getAttribute("alt"))
+
+    //   img.classList.add("harry")
+
+      function func1(){
+        // img.classList.remove("harry")
+        img.classList.toggle("blue")
+        if(img.classList.contains("blue")){ 
+            document.getElementById("btn").innerText = "Remove Blue"
+            
+        }
+        else{
+            document.getElementById("btn").innerText = "Add Blue";
+        }
+        
+      }
+
+
+
+    </script>
+</body>
+</html>

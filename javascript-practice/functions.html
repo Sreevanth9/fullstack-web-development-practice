@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+    <script>
+
+        function aPlusOne(a, b) {
+            let sum = a + b;
+            let average = sum / 2;
+            let averagePlusOne = average + 1;
+            return averagePlusOne
+        }
+
+        const sum = function (a, b) {
+            return a + b
+        }
+
+        console.log(sum(5, 6))
+
+        console.log("JavaScript Functions")
+        let a = 556;
+        let b = 45;
+
+        console.log(aPlusOne(a, b))
+        console.log(aPlusOne(4, 8))
+        console.log(aPlusOne(8, 23))
+
+        const square = (num) => {
+            return num * num;
+        };
+        console.log(square(4)); // 16
+
+        const multiply = (a)=>{
+            return a * a;
+        }
+
+        const greet = ()=>{
+            console.log("Hello")
+        }
+
+        console.log(greet())
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+    JavaScript Functions
+</body>
+
+</html>
